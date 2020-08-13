@@ -50,8 +50,8 @@ server::server( const std::string & address
 	 * provided all registration for the specified signal is made through Asio.
 	 */
 	if ( register_signals ) {
-		_signals.add(SIGINT);
-		_signals.add(SIGTERM);
+		//_signals.add(SIGINT);
+		//_signals.add(SIGTERM);
 #if defined(SIGQUIT)
 		_signals.add(SIGQUIT);
 #endif // defined(SIGQUIT)
